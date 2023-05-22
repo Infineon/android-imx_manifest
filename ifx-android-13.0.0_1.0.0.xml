@@ -3,12 +3,12 @@
 <manifest>
   <include name="rel_android-13.0.0_1.0.0.xml" />
 
-  <remote name="nxp-android" fetch="https://gitlab.intra.infineon.com/android/NXP" review="" />
-  <remote name="packages-android" fetch="https://gitlab.intra.infineon.com/android/packages/modules" review="" />
+  <remote name="ifx-android" fetch="https://gitlab.intra.infineon.com/android/NXP" review="" />
+  <remote name="ifx-packages-android" fetch="https://gitlab.intra.infineon.com/android/packages/modules" review="" />
 
-  <project path="vendor/nxp-opensource/kernel_imx" name="kernel" remote="nxp-android" revision="refs/tags/android-13.0.0_1.0.0" />
-  <project path="device/nxp" name="device_nxp" remote="nxp-android" revision="refs/tags/android-13.0.0_1.0.0" >
-  <project path="packages/modules/Wifi" name="Wifi" remote="packages-android" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="vendor/nxp-opensource/kernel_imx" name="kernel" remote="ifx-android" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="device/nxp" name="device_nxp" remote="ifx-android" revision="refs/tags/android-13.0.0_1.0.0" >
+  <project path="packages/modules/Wifi" name="Wifi" remote="ifx-packages-android" revision="refs/tags/android-13.0.0_1.0.0" />
 
 </manifest>
 
