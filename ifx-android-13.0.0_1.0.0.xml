@@ -7,8 +7,9 @@
   <remote name="ifx-packages-android" fetch="https://gitlab.intra.infineon.com/android/packages/modules" review="" />
 
   <project path="vendor/nxp-opensource/kernel_imx" name="kernel" remote="ifx-nxp-android" revision="ifx-imx-android-13.0.0_1.0.0" />
-  <project path="device/nxp" name="device_nxp" remote="ifx-nxp-android" revision="ifx-imx-android-13.0.0_1.0.0" />
+  <project path="device/nxp" name="device_nxp" remote="ifx-nxp-android" revision="ifx-imx-android-13.0.0_1.0.0" >
+  <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
+  </project>
   <project path="packages/modules/Wifi" name="Wifi" remote="ifx-packages-android" revision="ifx-imx-android-13.0.0_1.0.0" />
 
 </manifest>
-
