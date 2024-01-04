@@ -3,17 +3,14 @@
 <manifest>
   <include name="rel_android-13.0.0_1.0.0.xml" />
 
-  <remote name="ifx-nxp-android" fetch="https://gitlab.intra.infineon.com/android/NXP" review="" />
-  <remote name="ifx-packages-android" fetch="https://gitlab.intra.infineon.com/android/packages/modules" review="" />
-  <remote name="ifx-android" fetch="https://gitlab.intra.infineon.com/android/" review="" />
+  <remote name="ifx-android" fetch="https://github.com/Infineon" review="" />
 
-  <project path="vendor/nxp-opensource/kernel_imx" name="kernel" remote="ifx-nxp-android" revision="ifx-imx-m.2-android-13.0.0_1.0.0" />
-  <project path="device/nxp" name="device_nxp" remote="ifx-nxp-android" revision="ifx-imx-m.2-android-13.0.0_1.0.0" >
+  <project path="vendor/nxp-opensource/kernel_imx" name="android-imx_kernel" remote="ifx-android" revision="ifx-imx-m.2-android-13.0.0_1.0.0" />
+  <project path="device/nxp" name="android-imx_device" remote="ifx-android" revision="ifx-imx-m.2-android-13.0.0_1.0.0" >
   <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
   </project>
-  <project path="packages/modules/Wifi" name="Wifi" remote="ifx-packages-android" revision="ifx-imx-android-13.0.0_1.0.0" />
+  <project path="packages/modules/Wifi" name="android-platform_packages_modules_wifi" remote="ifx-android" revision="ifx-imx-android-13.0.0_1.0.0" />
+  <project path="external/wpa_supplicant_8" name="android-ifx_hostap" remote="ifx-android" revision="IOT_HOSTAP_ANDROID13_COMMERCIAL" />
 
-  <project path="cy_aosp_patches" remote="ifx-android" name="cy_aosp_patches" revision="ifx-imx-android-13.0.0_1.0.0" />
-  <project path="cy_aosp_scripts" remote="ifx-android" name="cy_aosp_scripts" revision="ifx-imx-android-13.0.0_1.0.0" />
 
 </manifest>

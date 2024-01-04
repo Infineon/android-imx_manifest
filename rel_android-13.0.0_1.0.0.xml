@@ -51,7 +51,6 @@
 <project path="development" name="aosp_platform_development" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
 <project path="external/tinyalsa" name="aosp_platform_external_tinyalsa" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
 <project path="external/tinycompress" name="aosp_platform_external_tinycompress" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
-<project path="external/wpa_supplicant_8" name="aosp_platform_external_wpa_supplicant_8" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
 <project path="frameworks/av" name="aosp_platform_frameworks_av" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
 <project path="frameworks/base" name="aosp_platform_frameworks_base" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
 <project path="frameworks/native" name="aosp_platform_frameworks_native" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0"/>
